@@ -20,13 +20,19 @@ const Navigation = () => (
           >Home</Link>
         </li>
         <li className='nav-item'>
-          <Link 
+          <Link
+            className={`nav-link fontOpenSans ${styles.link}`}
+            to='/Schedule'
+          >Conference Agenda</Link>
+        </li>
+        <li className='nav-item'>
+          <Link
             className={`nav-link fontOpenSans ${styles.link}`}
             to='/team'
           >Team</Link>
         </li>
         <li className='nav-item'>
-          <Link 
+          <Link
             className={`nav-link fontOpenSans ${styles.link}`}
             to='/workshops'
           >Workshops</Link>
