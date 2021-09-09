@@ -28,7 +28,7 @@ const Event = ({ time, title, location, duration }) => (
     <div style={{
       flex: 2
     }}>
-      <p 
+      <p
         className='fontOpenSans p-0 m-0 text-white'
         style={{
           fontWeight: 900,
@@ -61,7 +61,7 @@ const Event = ({ time, title, location, duration }) => (
 
 const Day = ({ day, events }) => (
   <div style={{ marginBottom: '2em' }}>
-  <h3 
+  <h3
     style={{
       fontWeight: 200,
       paddingBottom: '.5em'
@@ -190,31 +190,16 @@ const Landing = () => (
         </Section.Body>
       </Section>
       <Section>
-        <Section.Title>Conference Agenda</Section.Title>
-        <Section.Body>
-          <Container>
-              <Col 
-                className='mx-auto'
-                md={12}
-                lg={{ span: 10, offset: 1 }}
-              >
-                  <Agenda/>
-                
-              </Col>
-          </Container>
-        </Section.Body>
-      </Section>
-      <Section>
         <Section.Title>Fact 2018 Recap</Section.Title>
         <Section.Body>
           <Container>
-              <Col 
+              <Col
                 className='mx-auto'
                 md={12}
                 lg={{ span: 10, offset: 1 }}
               >
                   <UIYoutubeEmbed videoId='k6pGrTnh5uQ'/>
-                
+
               </Col>
           </Container>
         </Section.Body>

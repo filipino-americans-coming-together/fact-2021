@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navigation from './scenes/Navigation'
 import Landing from './scenes/LandingPlaceholder'
+import Schedule from './scenes/Schedule'
 import TeamPage from './scenes/team/TeamPage'
 import Workshops from './scenes/Workshops'
 import AppDownload from './scenes/AppDownload'
@@ -19,6 +20,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Route exact path='/' component={Landing} />
+        <Route path='/Schedule' component={Schedule} />
         <Route path='/team' component={TeamPage} />
         <Route path='/workshops' component={Workshops} />
         <Route path='/app' component={AppDownload} />
