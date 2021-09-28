@@ -13,11 +13,13 @@ import BookletPDFViewer from './scenes/BookletPDFViewer'
 import './stylesheets/global.css'
 import './stylesheets/colors.css'
 import './stylesheets/fonts.css'
+import ScrollToTop from './components/Utils/ScrollToTop'
 
 const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navigation />
         <Route exact path='/' component={Landing} />
         <Route path='/Schedule' component={Schedule} />
