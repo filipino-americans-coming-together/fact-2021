@@ -22,7 +22,7 @@ const TeamPage = () => (
               data-aos-easing="ease-in-out"
               data-aos-once="true"
               style={{ borderRadius: '1em'}} 
-              src={`${process.env.PUBLIC_URL}/img/fact-pack/team.jpeg`} 
+              src={`${process.env.PUBLIC_URL}/img/fact-pack/team.jpeg`}
               fluid />
           </Col>
           <hr className='col-xs-8 offset-cs-2 col-sm-6 offset-sm-3 p-3'/>
