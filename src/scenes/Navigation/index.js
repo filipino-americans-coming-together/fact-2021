@@ -10,7 +10,7 @@ const Navigation = () => (
   <Navbar
     variant="dark"
     expand="lg"
-    className={`${styles.nav} russian-green-bkg light-text boxShadow`}
+    className={`${styles.nav} russian-green-bkg light-text`}
   >
     <Link to="/">
       <Navbar.Brand className={styles.brand}>

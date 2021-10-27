@@ -1,0 +1,29 @@
+.hero {
+  padding-top: 100px;
+  width: 100%;
+  background: linear-gradient(var(--russian-green), var(--phthalo-green));
+  padding-left: 8rem;
+}
+
+.title {
+  color: var(--gold-metallic);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bolder;
+  font-size: 70px;
+}
+
+.headings {
+  padding-top: 3rem;
+}
+
+.bird {
+  margin-left: -12rem;
+  height: 75vh;
+}
+
+.description {
+  margin-top: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
