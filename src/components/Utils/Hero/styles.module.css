@@ -3,22 +3,75 @@
   width: 100%;
   background: linear-gradient(var(--russian-green), var(--phthalo-green));
   padding-left: 8rem;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  };
+}
+
+.date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 992px) {
+  .date {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .title {
   color: var(--gold-metallic);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 72px;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .headings {
   padding-top: 3rem;
 }
 
-.bird {
+@media only screen and (max-width: 992px) {
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.eagle {
   margin-left: -12rem;
   height: 75vh;
+}
+
+@media only screen and (max-width: 992px) {
+  .eagle {
+    display: none;
+  }
+}
+
+.mobile_eagle {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile_eagle {
+    width: 80%;
+    display: block;
+  }
 }
 
 .description {
@@ -26,4 +79,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .description {
+    font-size: 20px;
+  }
 }
