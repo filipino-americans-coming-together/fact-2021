@@ -7,7 +7,11 @@ import Nav from 'react-bootstrap/Nav';
 import styles from './styles.module.css';
 
 const Navigation = () => (
-  <Navbar bg="light" expand="lg" className={`${styles.nav} boxShadow`}>
+  <Navbar
+    variant="dark"
+    expand="lg"
+    className={`${styles.nav} russian-green-bkg light-text boxShadow`}
+  >
     <Link to="/">
       <Navbar.Brand className={styles.brand}>
         <img
@@ -16,13 +20,13 @@ const Navigation = () => (
           width="30"
           height="53"
           style={{
-            marginRight: '0.5rem'
+            marginRight: '0.5rem',
           }}
         />
         FACT 2021
       </Navbar.Brand>
     </Link>
-    <Navbar.Toggle className="mr-auto" aria-controls="basic-navbar-nav" />
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
       <Nav className="ml-auto">
         <li className="nav-item">
