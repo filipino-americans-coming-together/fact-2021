@@ -34,10 +34,11 @@ const Workshops = () => {
   }
   const renderSearchInput = () => {
     const translate = {
-      [ALL_WORKSHOPS]: "All Workshop Sessions",
-      [EVENTS.WORKSHOP_SESSION_01]: "Session 1",
-      [EVENTS.WORKSHOP_SESSION_02]: "Session 2",
-      [EVENTS.WORKSHOP_SESSION_03]: "Session 3",
+      [ALL_WORKSHOPS]: "All Sessions",
+      [EVENTS.WORKSHOP_SESSION_01]: "Workshop Session 1",
+      [EVENTS.WORKSHOP_SESSION_02]: "Workshop Session 2",
+      [EVENTS.WORKSHOP_SESSION_03]: "Workshop Session 3",
+      [EVENTS.NETWORKING_SESSIONS]: "Networking Sessions"
     }
     return (
       <div
@@ -55,15 +56,19 @@ const Workshops = () => {
             <Dropdown.Item 
               eventKey={EVENTS.WORKSHOP_SESSION_01}
             >
-              Session 1</Dropdown.Item>
+              Workshop Session 1 - Social Justice</Dropdown.Item>
             <Dropdown.Item 
               eventKey={EVENTS.WORKSHOP_SESSION_02}
             >
-              Session 2</Dropdown.Item>
+              Workshop Session 2 - Cultural Expression</Dropdown.Item>
             <Dropdown.Item 
               eventKey={EVENTS.WORKSHOP_SESSION_03}
             >
-              Session 3</Dropdown.Item>
+              Workshop Session 3 - Career Panels</Dropdown.Item>
+              <Dropdown.Item 
+              eventKey={EVENTS.NETWORKING_SESSIONS}
+            >
+              Networking Sessions</Dropdown.Item>
           </DropdownButton>
         </InputGroup>
       </div>
