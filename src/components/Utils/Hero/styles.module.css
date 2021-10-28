@@ -86,3 +86,23 @@
     font-size: 20px;
   }
 }
+
+.metallic_button {
+  background-color: var(--rocket-metallic);
+  border-color: var(--rocket-metallic);
+}
+
+.metallic_button:hover {
+  background-color: var(--rocket-metallic-light);
+  border-color: var(--rocket-metallic-light);
+}
+
+.green_button {
+  background-color: var(--russian-green);
+  border-color: var(--russian-green);
+}
+
+.green_button:hover {
+  background-color: var(--russian-green);
+  border-color: var(--russian-green);
+}

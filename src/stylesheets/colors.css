@@ -3,7 +3,11 @@
   --russian-green: #69976B;
   --old-burgundy: #432C2A;
   --rocket-metallic: #847371;
+  --rocket-metallic-light: #817a79;
+  --rocket-metallic-lighter: #979493;
   --gold-metallic: #DDB60A;
+  --gold-metallic-light: #ffde4b;
+  --gold-metallic-lighter: #ffe261;
   --light-text: #E5E5E5;
 }
 
@@ -45,6 +49,42 @@
 
 .gold-metallic-text {
   color: var(--gold-metallic);
+}
+
+.gold-metallic-button {
+  background-color: var(--gold-metallic);
+  border-color: var(--gold-metallic);
+  color: var(--phthalo-green);
+}
+
+.gold-metallic-button:hover {
+  background-color: var(--gold-metallic-light);
+  border-color: var(--gold-metallic-light);
+  color: var(--phthalo-green);
+}
+
+.gold-metallic-button:focus {
+  background-color: var(--gold-metallic-lighter);
+  border-color: var(--gold-metallic-lighter);
+  color: var(--phthalo-green);
+}
+
+.rocket-metallic-button {
+  background-color: var(--rocket-metallic);
+  border-color: var(--rocket-metallic);
+  color: var(--light-text);
+}
+
+.rocket-metallic-button:hover {
+  background-color: var(--rocket-metallic-light);
+  border-color: var(--rocket-metallic-light);
+  color: var(--light-text);
+}
+
+.rocket-metallic-button:focus {
+  background-color: var(--rocket-metallic-lighter);
+  border-color: var(--rocket-metallic-lighter);
+  color: var(--light-text);
 }
 
 .light-text {

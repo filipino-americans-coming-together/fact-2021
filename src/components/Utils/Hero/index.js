@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Image, Row } from 'react-bootstrap';
+import { Container, Col, Image, Row, Button } from 'react-bootstrap';
 
 import styles from './styles.module.css';
 
@@ -13,7 +13,9 @@ const Hero = () => {
               src={`${process.env.PUBLIC_URL}/img/fact-bird.png`}
               className={styles.mobile_eagle}
             />
-            <h3 className={`${styles.date} light-text`}>November 12-14, 2021</h3>
+            <h3 className={`${styles.date} light-text`}>
+              November 12-14, 2021
+            </h3>
             <h1 className={styles.title}>
               We Unite <br /> Filipino-Americans.
             </h1>
@@ -22,6 +24,12 @@ const Hero = () => {
               the Midwest, promoting Filipino and Filipino-American culture
               through workshops, panels, and performances.
             </p>
+            <Button variant="fact" size="lg" className="rocket-metallic-button mr-4">
+              Conference Agenda
+            </Button>
+            <Button variant="fact" size="lg" className="gold-metallic-button">
+              Register Now
+            </Button>
           </Col>
           <Col lg={4} md={12}>
             <Image
