@@ -13,15 +13,15 @@ const Hero = () => {
           <Col lg={8} md={12} className={styles.headings}>
             <Image
               src={`${process.env.PUBLIC_URL}/img/fact-bird.png`}
-              className={styles.mobile_eagle}
+              className={`animated fadeIn ${styles.mobile_eagle}`}
             />
-            <h3 className={`${styles.date} light-text`}>
+            <h3 className={`${styles.date} light-text animated fadeIn`}>
               November 12-14, 2021
             </h3>
-            <h1 className={styles.title}>
+            <h1 className={`${styles.title} animated fadeIn`}>
               We Unite <br /> Filipino-Americans.
             </h1>
-            <p className={`${styles.description} light-text`}>
+            <p className={`${styles.description} light-text animated fadeIn`}>
               FACT is the largest student-led Filipino-American conference in
               the Midwest, promoting Filipino and Filipino-American culture
               through workshops, panels, and performances.
@@ -30,7 +30,7 @@ const Hero = () => {
               <Button
                 variant="fact"
                 size="lg"
-                className={`${styles.conference_button} rocket-metallic-button`}
+                className={`${styles.conference_button} rocket-metallic-button animated fadeIn`}
               >
                 Conference Agenda
               </Button>
@@ -44,7 +44,7 @@ const Hero = () => {
               <Button
                 variant="fact"
                 size="lg"
-                className={`${styles.register_button} gold-metallic-button`}
+                className={`${styles.register_button} gold-metallic-button animated fadeIn`}
               >
                 Register Now
               </Button>
@@ -53,7 +53,7 @@ const Hero = () => {
           <Col lg={4} md={12}>
             <Image
               src={`${process.env.PUBLIC_URL}/img/fact-bird.png`}
-              className={styles.eagle}
+              className={`${styles.eagle} ${styles.fade_in_image}`}
             />
           </Col>
         </Row>
