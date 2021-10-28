@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Col, Image, Row, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import styles from './styles.module.css';
 
@@ -24,12 +25,17 @@ const Hero = () => {
               the Midwest, promoting Filipino and Filipino-American culture
               through workshops, panels, and performances.
             </p>
-            <Button variant="fact" size="lg" className="rocket-metallic-button mr-4">
-              Conference Agenda
-            </Button>
-            <Button variant="fact" size="lg" className="gold-metallic-button">
-              Register Now
-            </Button>
+            <Link to="/Schedule">
+              <Button variant="fact" size="lg" className={`${styles.conference_button} rocket-metallic-button`}>
+                Conference Agenda
+              </Button>
+            </Link>
+            {/* TODO: fix these links */}
+            <Link to="/">
+              <Button variant="fact" size="lg" className={`${styles.register_button} gold-metallic-button`}>
+                Register Now
+              </Button>
+            </Link>
           </Col>
           <Col lg={4} md={12}>
             <Image
