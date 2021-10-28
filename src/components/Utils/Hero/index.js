@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Col, Image, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { REGISTRATION_URL } from '../../../constants/links';
 
 import styles from './styles.module.css';
 
@@ -26,16 +27,28 @@ const Hero = () => {
               through workshops, panels, and performances.
             </p>
             <Link to="/Schedule">
-              <Button variant="fact" size="lg" className={`${styles.conference_button} rocket-metallic-button`}>
+              <Button
+                variant="fact"
+                size="lg"
+                className={`${styles.conference_button} rocket-metallic-button`}
+              >
                 Conference Agenda
               </Button>
             </Link>
             {/* TODO: fix these links */}
-            <Link to="/">
-              <Button variant="fact" size="lg" className={`${styles.register_button} gold-metallic-button`}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={REGISTRATION_URL}
+            >
+              <Button
+                variant="fact"
+                size="lg"
+                className={`${styles.register_button} gold-metallic-button`}
+              >
                 Register Now
               </Button>
-            </Link>
+            </a>
           </Col>
           <Col lg={4} md={12}>
             <Image

@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import styles from './styles.module.css';
+import { Button } from 'react-bootstrap';
+import { REGISTRATION_URL } from '../../constants/links';
 
 const Navigation = () => (
   <Navbar
@@ -13,6 +15,7 @@ const Navigation = () => (
     className={`${styles.nav} russian-green-bkg light-text`}
   >
     <Link to="/">
+      {/* Logo & Name */}
       <Navbar.Brand className={styles.brand}>
         <img
           alt="FACT Logo"
@@ -26,6 +29,8 @@ const Navigation = () => (
         FACT 2021
       </Navbar.Brand>
     </Link>
+
+    {/* Navigation */}
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
       <Nav className="ml-auto">
@@ -50,6 +55,11 @@ const Navigation = () => (
             Meet the Team
           </Link>
         </li>
+        <a target="_blank" rel="noopener noreferrer" href={REGISTRATION_URL}>
+          <Button variant="fact" className="gold-metallic-button ml-3">
+            Register Now
+          </Button>
+        </a>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
