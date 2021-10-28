@@ -29,7 +29,7 @@ const SessionHeader = styled.div`
 
 const SessionId = styled.div`
   display: flex;
-  background: linear-gradient(90deg, rgba(181,126,175,1) 0%, rgba(203,145,196,1) 100%);
+  background: linear-gradient(90deg, rgba(23,48,24,1) 0%, rgba(105,151,107,1) 100%);
   color: white;
   padding: 5px 20px;
   border-radius: .5em;
@@ -86,11 +86,11 @@ const WorkshopSession = ({ workshop }) => {
 
   const toggleInfoButtonMessage = isSelected ? (
     <div>
-      <i style={{ color: 'rgba(181,126,175,1)', fontSize: '1.5em'}} class="fas fa-chevron-up"></i> 
+      <i style={{ color: 'rgba(23,48,24,1)', fontSize: '1.5em'}} class="fas fa-chevron-up"></i> 
     </div>
   ) : (
     <div>
-      <i style={{ color: 'rgba(181,126,175,1)', fontSize: '1.5em'}} class="fas fa-chevron-down"></i>
+      <i style={{ color: 'rgba(23,48,24,1)', fontSize: '1.5em'}} class="fas fa-chevron-down"></i>
     </div>
   )
   return (
@@ -115,7 +115,7 @@ const WorkshopSession = ({ workshop }) => {
       {
         isSelected && (
           <div className='mb-4'>
-            <AboutTheFacilitator>About the Facilitator</AboutTheFacilitator>
+            <AboutTheFacilitator>About</AboutTheFacilitator>
             <div dangerouslySetInnerHTML={createMarkup(workshop.bio)}/>
           </div>
         )
