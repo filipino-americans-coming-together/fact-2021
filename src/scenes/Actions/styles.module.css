@@ -28,6 +28,21 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+  .actions {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .action {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 .eagle {
   height: 20rem;
 }

@@ -5,7 +5,7 @@ import { REGISTRATION_URL } from '../../constants/links';
 
 import styles from './styles.module.css';
 
-const About = () => {
+const Actions = () => {
   return (
     <div className={styles.root}>
       <Container className={styles.container}>
@@ -16,17 +16,17 @@ const About = () => {
         <h2 className={styles.heading}>Join FACT Today.</h2>
         <div className={styles.actions}>
           <a target="_blank" rel="noopener noreferrer" href={REGISTRATION_URL}>
-            <Button size="lg" variant="fact gold-metallic-button mr-4">
+            <Button size="lg" variant="fact gold-metallic-button mr-4" className={styles.action}>
               Register Now →
             </Button>
           </a>
           <Link to="/schedule">
-            <Button size="lg" variant="fact rocket-metallic-button mr-4">
+            <Button size="lg" variant="fact rocket-metallic-button mr-4" className={styles.action}>
               Conference Agenda →
             </Button>
           </Link>
           <Link to="/workshops">
-            <Button size="lg" variant="fact phthalo-green-button">
+            <Button size="lg" variant="fact phthalo-green-button" className={styles.action}>
               View All Workshops →
             </Button>
           </Link>
@@ -36,4 +36,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Actions;
