@@ -31,10 +31,13 @@
 
 .workshopTitle {
   font-weight: 900;
+  margin-bottom: 0rem;
+}
+
+.organization {
+  font-weight: 600;
 }
 
 .scrollable {
   display: flex;
-  /* max-width: 100vw; */
-  /* overflow-x: scroll; */
 }
