@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, div, Row } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SimpleBar from 'simplebar-react';
 
@@ -33,7 +33,6 @@ const FacilitatorsSection = () => {
           ))}
         </div>
       </SimpleBar>
-      {/* TODO: add button to workshops */}
       <div className={styles.actions}>
         <Link to="/workshops">
           <Button variant="fact" size="lg" className="phthalo-green-button">

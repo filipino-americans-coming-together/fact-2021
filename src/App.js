@@ -7,7 +7,7 @@ import Schedule from './scenes/Schedule'
 import TeamPage from './scenes/team/TeamPage'
 import Workshops from './scenes/Workshops'
 import AppDownload from './scenes/AppDownload'
-import AdminDashboard from './scenes/AdminDashboard'
+// import AdminDashboard from './scenes/AdminDashboard'
 import BookletPDFViewer from './scenes/BookletPDFViewer'
 
 import './stylesheets/global.css'
@@ -22,11 +22,11 @@ const App = () => {
         <ScrollToTop />
         <Navigation />
         <Route exact path='/' component={Landing} />
-        <Route path='/Schedule' component={Schedule} />
+        <Route path='/schedule' component={Schedule} />
         <Route path='/team' component={TeamPage} />
         <Route path='/workshops' component={Workshops} />
         <Route path='/app' component={AppDownload} />
-        <Route path='/admin-dashboard' component={AdminDashboard} />
+        {/* <Route path='/admin-dashboard' component={AdminDashboard} /> */}
         <Route path='/booklet' component={BookletPDFViewer} />
         <script
           src='https://code.jquery.com/jquery-3.3.1.slim.min.js'

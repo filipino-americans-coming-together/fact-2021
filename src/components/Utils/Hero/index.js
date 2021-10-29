@@ -26,7 +26,7 @@ const Hero = () => {
               the Midwest, promoting Filipino and Filipino-American culture
               through workshops, panels, and performances.
             </p>
-            <Link to="/Schedule">
+            <Link to="/schedule">
               <Button
                 variant="fact"
                 size="lg"

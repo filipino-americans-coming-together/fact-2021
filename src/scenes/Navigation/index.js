@@ -45,7 +45,7 @@ const Navigation = () => (
         <li className="nav-item">
           <Link
             className={`nav-link fontOpenSans ${styles.link}`}
-            to="/Schedule"
+            to="/schedule"
           >
             Conference Agenda
           </Link>
