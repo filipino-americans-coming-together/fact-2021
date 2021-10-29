@@ -2,13 +2,19 @@
   position: fixed !important;
   width: 100%;
   z-index: 1;
-  background-color: white;
 }
 
 .brand {
   font-family: 'Moam';
+  font-size: 1.5rem;
 }
 
 .link {
   font-weight: 300;
+}
+
+@media screen and (max-width: 992px) {
+  .registerButton {
+    width: 90%; 
+  }
 }
