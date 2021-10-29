@@ -15,7 +15,7 @@ import Footer from '../../components/Footer';
 import Hero from '../../components/Utils/Hero';
 import About from '../About';
 import { REGISTRATION_URL } from '../../constants/links';
-import WorkshopsSection from '../WorkshopsSection';
+import FacilitatorsSection from '../FacilitatorsSection';
 
 const Landing = () => (
   <>
@@ -70,7 +70,7 @@ const Landing = () => (
           </Container>
         </Section.Body>
       </Section>
-      <WorkshopsSection />
+      <FacilitatorsSection />
       <Section>
         <Section.Title>Fact 2018 Recap</Section.Title>
         <Section.Body>

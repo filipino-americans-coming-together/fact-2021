@@ -13,7 +13,7 @@ const Hero = () => {
           <Col lg={8} md={12} className={styles.headings}>
             <Image
               src={`${process.env.PUBLIC_URL}/img/fact-bird.png`}
-              className={`animated fadeIn ${styles.mobile_eagle}`}
+              className={`animated fadeIn ${styles.mobileEagle}`}
             />
             <h3 className={`${styles.date} light-text animated fadeIn`}>
               November 12-14, 2021
@@ -30,7 +30,7 @@ const Hero = () => {
               <Button
                 variant="fact"
                 size="lg"
-                className={`${styles.conference_button} rocket-metallic-button animated fadeIn`}
+                className={`${styles.conferenceButton} rocket-metallic-button animated fadeIn`}
               >
                 Conference Agenda
               </Button>
@@ -44,7 +44,7 @@ const Hero = () => {
               <Button
                 variant="fact"
                 size="lg"
-                className={`${styles.register_button} gold-metallic-button animated fadeIn`}
+                className={`${styles.registerButton} gold-metallic-button animated fadeIn`}
               >
                 Register Now
               </Button>
@@ -53,7 +53,7 @@ const Hero = () => {
           <Col lg={4} md={12}>
             <Image
               src={`${process.env.PUBLIC_URL}/img/fact-bird.png`}
-              className={`${styles.eagle} ${styles.fade_in_image}`}
+              className={`${styles.eagle} ${styles.fadeInImage}`}
             />
           </Col>
         </Row>

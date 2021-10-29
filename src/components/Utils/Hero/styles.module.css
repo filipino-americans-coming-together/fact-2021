@@ -65,12 +65,12 @@
   }
 }
 
-.mobile_eagle {
+.mobileEagle {
   display: none;
 }
 
 @media only screen and (max-width: 992px) {
-  .mobile_eagle {
+  .mobileEagle {
     width: 80%;
     display: block;
   }
@@ -89,12 +89,12 @@
   }
 }
 
-.conference_button {
+.conferenceButton {
   margin-right: 1rem;
 }
 
 @media only screen and (max-width: 992px) {
-  .conference_button {
+  .conferenceButton {
     margin-top: 1rem;
     margin-right: 0;
     min-width: 50vw;
@@ -102,14 +102,14 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .register_button {
+  .registerButton {
     margin-top: 1rem;
     min-width: 50vw;
   }
 }
 
 /* https://blog.hubspot.com/website/css-fade-in */
-.fade_in_image {
+.fadeInImage {
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;

@@ -1,5 +1,7 @@
 :root {
   --phthalo-green: #173018;
+  --phthalo-green-light: #203d21;
+  --phthalo-green-lighter: #335334;
   --russian-green: #69976B;
   --old-burgundy: #432C2A;
   --rocket-metallic: #847371;
@@ -84,6 +86,24 @@
 .rocket-metallic-button:focus {
   background-color: var(--rocket-metallic-lighter);
   border-color: var(--rocket-metallic-lighter);
+  color: var(--light-text);
+}
+
+.phthalo-green-button {
+  background-color: var(--phthalo-green);
+  border-color: var(--phthalo-green);
+  color: var(--light-text);
+}
+
+.phthalo-green-button:hover {
+  background-color: var(--phthalo-green-light);
+  border-color: var(--phthalo-green-light);
+  color: var(--light-text);
+}
+
+.phthalo-green-button:focus {
+  background-color: var(--phthalo-green-lighter);
+  border-color: var(--phthalo-green-lighter);
   color: var(--light-text);
 }
 
