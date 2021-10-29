@@ -56,7 +56,10 @@ const Navigation = () => (
           </Link>
         </li>
         <a target="_blank" rel="noopener noreferrer" href={REGISTRATION_URL}>
-          <Button variant="fact" className="gold-metallic-button ml-3">
+          <Button
+            variant="fact"
+            className={`${styles.registerButton} gold-metallic-button ml-3`}
+          >
             Register Now
           </Button>
         </a>
