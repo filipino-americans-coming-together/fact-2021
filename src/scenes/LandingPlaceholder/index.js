@@ -3,6 +3,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 import UICard from '../../UIComponents/UICard';
 import UIYoutubeEmbed from '../../UIComponents/UIYoutubeEmbed';
@@ -14,7 +15,7 @@ import Footer from '../../components/Footer';
 import Hero from '../../components/Utils/Hero';
 import About from '../About';
 import { REGISTRATION_URL } from '../../constants/links';
-import { Button } from 'react-bootstrap';
+import WorkshopsSection from '../WorkshopsSection';
 
 const Landing = () => (
   <>
@@ -69,6 +70,7 @@ const Landing = () => (
           </Container>
         </Section.Body>
       </Section>
+      <WorkshopsSection />
       <Section>
         <Section.Title>Fact 2018 Recap</Section.Title>
         <Section.Body>
