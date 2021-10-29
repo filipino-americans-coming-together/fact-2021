@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, Card, Col, div, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SimpleBar from 'simplebar-react';
+
+import 'simplebar/dist/simplebar.min.css';
 
 import styles from './styles.module.css';
 
@@ -10,16 +13,23 @@ const FacilitatorsSection = () => {
   return (
     <div className={styles.root}>
       <h1 className={styles.header}>Facilitators</h1>
-      <div className={styles.scrollable}>
-        {SPEAKERS.map(({ name, position }) => (
-          <div key={name} className={styles.facilitator}>
+      <SimpleBar
+        style={{
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'row',
+          maxWidth: '100vw',
+        }}
+      >
+        <div className={styles.scrollable}>
+          {SPEAKERS.map(({ name, position }) => (
             <Card className={styles.card}>
               <Card.Title className={styles.workshopTitle}>{name}</Card.Title>
               <Card.Text>{position}</Card.Text>
             </Card>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </SimpleBar>
       {/* TODO: add button to workshops */}
       <div className={styles.actions}>
         <Link to="/workshops">
