@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import UICard from '../../UIComponents/UICard';
-import UIYoutubeEmbed from '../../UIComponents/UIYoutubeEmbed';
 
 import Layout from '../../components/Utils/Layout';
 import Section from '../../components/Utils/Section';
@@ -14,21 +13,23 @@ import Footer from '../../components/Footer';
 
 import Hero from '../../components/Utils/Hero';
 import About from '../About';
-import { REGISTRATION_URL } from '../../constants/links';
 import FacilitatorsSection from '../FacilitatorsSection';
+import Actions from '../Actions';
+
+import { REGISTRATION_URL } from '../../constants/links';
 
 const Landing = () => (
   <>
     <Layout>
       <Hero />
       <About />
-      <Section>
+      <Section className="phthalo-green-bkg">
         <Section.Body>
           <Container>
             <UICard>
               <UICard.Header>
                 <UICard.Title>Register for FACT 2021</UICard.Title>
-                <UICard.Subtitle>Nov 12th-14th</UICard.Subtitle>
+                <UICard.Subtitle>Open until Nov. 12</UICard.Subtitle>
               </UICard.Header>
               <UICard.Body>
                 <Row>
@@ -71,16 +72,7 @@ const Landing = () => (
         </Section.Body>
       </Section>
       <FacilitatorsSection />
-      <Section>
-        <Section.Title>Fact 2018 Recap</Section.Title>
-        <Section.Body>
-          <Container>
-            <Col className="mx-auto" md={12} lg={{ span: 10, offset: 1 }}>
-              <UIYoutubeEmbed videoId="k6pGrTnh5uQ" />
-            </Col>
-          </Container>
-        </Section.Body>
-      </Section>
+      <Actions />
       <Footer />
     </Layout>
   </>
