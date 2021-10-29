@@ -23,12 +23,10 @@ const FacilitatorsSection = () => {
       >
         <div className={styles.scrollable}>
           {SPEAKERS.map(({ name, position, organization }) => (
-            <Card className={styles.card}>
+            <Card className={styles.card} key={name}>
               <Card.Title className={styles.workshopTitle}>{name}</Card.Title>
-              <Card.Text>
-                <p className={styles.organization}>{organization}</p>
-                <p>{position}</p>
-              </Card.Text>
+              <p className={styles.organization}>{organization}</p>
+              <p>{position}</p>
             </Card>
           ))}
         </div>

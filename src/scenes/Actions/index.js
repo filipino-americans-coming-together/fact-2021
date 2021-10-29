@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Image, Row, Button } from 'react-bootstrap';
+import { Container, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { REGISTRATION_URL } from '../../constants/links';
 
