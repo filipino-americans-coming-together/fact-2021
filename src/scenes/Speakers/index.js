@@ -18,8 +18,15 @@ const SpeakerPage = () => (
         <Container>
           <Col xs={12} md={{ span: 10, offset: 1 }} className="mb-5"></Col>
           <hr className="py-3" style={{ width: '50%' }} />
-          {SPEAKERS.map((speaker) => (
-            <h3>test</h3>
+          {SPEAKERS.map(({ name, organization, position, bio, image }) => (
+            <Speaker
+              key={image}
+              name={name}
+              organization={organization}
+              position={position}
+              bio={bio}
+              imageURL={`/img/facilitators/${image}`}
+            />
           ))}
         </Container>
       </Section.Body>
