@@ -12,7 +12,8 @@ import SPEAKERS from '../../constants/speakers.json';
 const FacilitatorsSection = () => {
   return (
     <div className={styles.root}>
-      <h1 className={styles.header}>Facilitators</h1>
+      <h2 className={styles.header}>Facilitators</h2>
+      <hr className={styles.line} />
       <SimpleBar
         style={{
           width: '100%',
@@ -22,8 +23,14 @@ const FacilitatorsSection = () => {
         }}
       >
         <div className={styles.scrollable}>
-          {SPEAKERS.map(({ name, position, organization }) => (
+          {SPEAKERS.map(({ name, position, organization, image }) => (
             <Card className={styles.card} key={name}>
+              <Card.Img
+                variant="top"
+                src={`${process.env.PUBLIC_URL}/img/facilitators/${image}`}
+                alt={name}
+                className={styles.image}
+              />
               <Card.Title className={styles.workshopTitle}>{name}</Card.Title>
               <p className={styles.organization}>{organization}</p>
               <p>{position}</p>
