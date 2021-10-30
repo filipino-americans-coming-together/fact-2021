@@ -15,6 +15,9 @@ import WorkshopSession from './WorkShopSession';
 import { EVENTS } from '../../constants/events';
 import WorkshopList from '../../constants/workshops';
 import Footer from '../../components/Footer';
+import { FormControl } from 'react-bootstrap';
+
+import styles from './styles.module.css';
 
 const ALL_WORKSHOPS = 'ALL_WORKSHOPS';
 
@@ -35,6 +38,7 @@ const Workshops = () => {
   const handleSearchDropdownSelect = (eventKey) => {
     setSearchFilter(eventKey);
   };
+
   const renderSearchInput = () => {
     const translate = {
       [ALL_WORKSHOPS]: 'All Sessions',
@@ -44,7 +48,14 @@ const Workshops = () => {
       [EVENTS.NETWORKING_SESSIONS]: 'Networking Sessions',
     };
     return (
-      <div className="mb-4 mx-auto">
+      <div className={styles.inputs}>
+        <InputGroup className="mr-3">
+          <FormControl
+            placeholder="Search workshops"
+            aria-label="Search workshops"
+            aria-describedby="search-workshops"
+          />
+        </InputGroup>
         <InputGroup>
           <DropdownButton
             title={translate[searchFilter]}
@@ -109,12 +120,12 @@ const Workshops = () => {
   };
 
   return (
-    <Layout style={{ paddingTop: '5vh' }}>
+    <Layout style={{ paddingTop: '9vh' }}>
       <Section>
         <Section.Title>Workshops</Section.Title>
         <Section.Body>
           <Container>
-            <Row className="pb-2">{renderSearchInput()}</Row>
+            <Row className={styles.inputRow}>{renderSearchInput()}</Row>
             <Row>
               <Col lg={{ span: 8, offset: 2 }}>
                 <TransitionMotion
