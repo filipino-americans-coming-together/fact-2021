@@ -6,6 +6,7 @@ import Landing from './scenes/LandingPlaceholder'
 import Schedule from './scenes/Schedule'
 import TeamPage from './scenes/team/TeamPage'
 import Workshops from './scenes/Workshops'
+import Speakers from './scenes/Speakers';
 import AppDownload from './scenes/AppDownload'
 // import AdminDashboard from './scenes/AdminDashboard'
 import BookletPDFViewer from './scenes/BookletPDFViewer'
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/schedule' component={Schedule} />
         <Route path='/team' component={TeamPage} />
         <Route path='/workshops' component={Workshops} />
+        <Route path='/speakers' component={Speakers} />
         <Route path='/app' component={AppDownload} />
         {/* <Route path='/admin-dashboard' component={AdminDashboard} /> */}
         <Route path='/booklet' component={BookletPDFViewer} />
