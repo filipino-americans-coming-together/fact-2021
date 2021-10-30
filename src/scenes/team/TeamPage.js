@@ -24,7 +24,7 @@ const TeamPage = () => (
               src={`${process.env.PUBLIC_URL}/img/team/team.jpeg`} 
               fluid /> */}
           </Col>
-          <hr className="col-xs-8 offset-cs-2 col-sm-6 offset-sm-3 p-3" />
+          <hr className="py-3" style={{ width: '50%' }} />
           <TeamMember
             name="Lorenzo Magnaye"
             position="Co-Coordinator"
