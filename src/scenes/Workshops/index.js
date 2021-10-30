@@ -25,9 +25,19 @@ const getWorkshops = (filters) => {
   if (filters === undefined) {
     return WorkshopList;
   }
+  const { query = '' } = filters;
+  const contains = (str = '', query = '') =>
+    str.toLowerCase().includes(query.toLowerCase());
   return WorkshopList.filter((workshop) => {
     return (
       workshop.session === filters.session || filters.session === ALL_WORKSHOPS
+    );
+  }).filter((workshop) => {
+    return (
+      contains(workshop.title, query) ||
+      contains(workshop.bio, query) ||
+      contains(workshop.name, query) ||
+      contains(workshop.description, query)
     );
   });
 };
@@ -35,6 +45,7 @@ const getWorkshops = (filters) => {
 const Workshops = () => {
   const [focusedWorkshop, setFocusedWorkshop] = useState('');
   const [searchFilter, setSearchFilter] = useState(ALL_WORKSHOPS);
+  const [searchQuery, setSearchQuery] = useState('');
   const handleSearchDropdownSelect = (eventKey) => {
     setSearchFilter(eventKey);
   };
@@ -54,6 +65,9 @@ const Workshops = () => {
             placeholder="Search workshops"
             aria-label="Search workshops"
             aria-describedby="search-workshops"
+            onChange={(e) => {
+              setSearchQuery(e.target.value);
+            }}
           />
         </InputGroup>
         <InputGroup>
@@ -99,24 +113,27 @@ const Workshops = () => {
   };
 
   const getStyles = () => {
-    return getWorkshops({ session: searchFilter }).map((workshop) => ({
-      key: workshop.id,
-      data: {
-        ...workshop,
-        handleClick: () => {
-          if (workshop.id === focusedWorkshop) {
-            setFocusedWorkshop('');
-          } else {
-            setFocusedWorkshop(workshop.id);
-          }
+    return getWorkshops({ session: searchFilter, query: searchQuery }).map(
+      (workshop) => ({
+        key: workshop.id,
+        data: {
+          ...workshop,
+          handleClick: () => {
+            if (workshop.id === focusedWorkshop) {
+              setFocusedWorkshop('');
+            } else {
+              setFocusedWorkshop(workshop.id);
+            }
+          },
+          isSelected: workshop.id === focusedWorkshop,
         },
-        isSelected: workshop.id === focusedWorkshop,
-      },
-      style: {
-        maxHeight: workshop.id === focusedWorkshop ? spring(2400) : spring(800),
-        opacity: spring(1),
-      },
-    }));
+        style: {
+          maxHeight:
+            workshop.id === focusedWorkshop ? spring(2400) : spring(800),
+          opacity: spring(1),
+        },
+      })
+    );
   };
 
   return (
@@ -124,7 +141,7 @@ const Workshops = () => {
       <Section>
         <Section.Title>Workshops</Section.Title>
         <Section.Body>
-          <Container>
+          <Container style={{ minHeight: '40vh' }}>
             <Row className={styles.inputRow}>{renderSearchInput()}</Row>
             <Row>
               <Col lg={{ span: 8, offset: 2 }}>
