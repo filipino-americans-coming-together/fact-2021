@@ -43,6 +43,11 @@ const Navigation = () => (
           </Link>
         </li>
         <li className="nav-item">
+          <Link className={`nav-link fontOpenSans ${styles.link}`} to="/speakers">
+            Speakers
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link
             className={`nav-link fontOpenSans ${styles.link}`}
             to="/schedule"
