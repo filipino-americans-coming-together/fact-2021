@@ -102,7 +102,7 @@ const TeamPage = () => (
             position="Conference Ambassador"
             year="Senior"
             major="Media and Cinema Studies"
-            bio="Brion is senior studying in Media and Cinema Studies. Although he never has homework he will find a way to procrastinate till last minute. Brion enjoys watching anime, movies, and playing video games. He is the biggest S I M P for TWICE and for Eula from Genshin Impact. Catch him with all the memes at FACT this year!"
+            bio="Brion is a Senior studying Media and Cinema Studies. Although he never has homework he will find a way to procrastinate till last minute. Brion enjoys watching anime, movies, and playing video games. He is the biggest S I M P for TWICE and for Eula from Genshin Impact. Catch him with all the memes at FACT this year!"
             imageURL="/img/team/BrionNono.jpg"
           />
           <TeamMember
@@ -130,12 +130,20 @@ const TeamPage = () => (
             imageURL="/img/team/NicolasLangtiw.jpg"
           />
           <TeamMember
-            name="Shayna Provine"
-            position="Information Technology"
-            year="Senior"
-            major="Computer Science"
-            bio="Shayna is a Senior studying Computer Science interested in the human and social impact of computing. She has previously worked at AWS Cryptography as a Software Development Engineer Intern and will be returning to Amazon in Summer 2022. She spends way too much time on Genshin Impact as staff for the Khaenri'ah Lore Project and moderator for the r/Ganyu subreddit, not to mention that she has C6 Hu Tao. As IT Chair, she is excited to help the FACT experience go digital!"
-            imageURL="/img/team/ShaynaProvine.jpg"
+            name='GioMarco Talavera'
+            position='Media'
+            year='Senior'
+            major='Technical Systems Management with a Minor in Business and Agricultural Health & Safety'
+            bio='Gio Marco, or Gio, is a Senior majoring in Technical Systems Management with minors in Business and Agricultural Health & Safety. His interests include jamming to music, taking photos, and playing basketball. He is currently working for the UIUC CITL&apos;s media resource team, where he developed an interest in filming. With the proper gear and YouTube by his side, he will learn all the tricks he needs to provide fun and exciting videos to showcase everyone&apos;s hard work and talent. He was previously involved in FACT 2019 as a photographer but now holds the position of Media co-chair. As Co-chairs with Nic, they aim to deliver breathtaking visuals to fully portray our Filipino culture.'
+            imageURL='/img/team/GioMarcoTalavera.jpg'
+          />
+          <TeamMember
+            name='Shayna Provine'
+            position='Information Technology'
+            year='Senior'
+            major='Computer Science'
+            bio='Shayna is a Senior studying Computer Science interested in the human and social impact of computing. She has previously worked at AWS Cryptography as a Software Development Engineer Intern and will be returning to Amazon in Summer 2022. She spends way too much time on Genshin Impact as staff for the Khaenri&apos;ah Lore Project and moderator for the r/Ganyu subreddit, not to mention that she has C6 Hu Tao. As IT Chair, she is excited to help the FACT experience go digital!'
+            imageURL='/img/team/ShaynaProvine.jpg'
           />
         </Container>
       </Section.Body>
