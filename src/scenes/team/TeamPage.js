@@ -40,7 +40,7 @@ const TeamPage = () => (
             year="Senior"
             major="Molecular and Cellular Biology with a Minor in Global Health"
             bio="Myka is a Senior in Molecular and Cellular Biology with a focus on Cell and Developmental Biology. She plans to pursue a career in healthcare as she is passionate about health equity and social determinants of health. In her free time, you can find her representing the University of Illinois at Urbana-Champaign as a Student Alumni Ambassador, volunteer at Carle Hospital, or a Beckwith Personal Assistant for students with disabilities. To unwind, Myka loves listening to podcasts, cooking, and spending quality time with her friends. As a proud Filipino-American, Myka is honored to be FACT Co-Coordinator and is excited to showcase the efforts her and her FACT Pack have accomplished during the pandemic. Despite the rise in anti-POC sentiments, Myka hopes that this year’s delegates feel empowered within their cultural identities and stand in solidarity with other marginalized communities."
-            imageURL="/img/team/MykaPadilla.jfif"
+            imageURL="/img/team/MykaPadilla.jpg"
           />
           <TeamMember
             name="Renzo Ledesma"
@@ -120,7 +120,7 @@ const TeamPage = () => (
             year="Junior"
             major="Sustainable Design with a Minor in Psychology and Integrative Biology"
             bio="Emily is a Junior at UIUC, studying Sustainable Design and pursuing minors in Psychology and Integrative Biology. She hopes to learn more ways to make our landscapes more sustainable for people/animals biologically, economically, and socially. In her free time, she loves to draw, play video games, and hang out with friends. She is excited and cannot wait for FACT this year because she  knows for a FACT that it'll be great :)"
-            imageURL="/img/team/EmilyBautista.jpg"
+            imageURL="/img/team/EmilyBautista.jfif"
           />
           <TeamMember
             name="Nicolas Langtiw"
