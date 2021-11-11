@@ -86,16 +86,16 @@ const Landing = () => (
                   />
                 </Col>
                 <Col>
-                  <p>Would you like to be entered to win one of two $25 Target Gift Card giving? Just do one of these two tasks:
-                  1. sign-up as a job seeker at Asian Student Achievement by going to <a href="https://www.learnasa.org/">www.learnasa.org</a> (ASA is a not-for-profit organization that 
+                  <p>Would you like to be entered to win one of two $25 Target Gift Card giving? Just do one of these two tasks:</p>
+                  <p>1. Sign-up as a job seeker at Asian Student Achievement by going to <a href="https://www.learnasa.org/">www.learnasa.org</a> (ASA is a not-for-profit organization that 
                   specializes in coaching that also has a diversity-driven job board) and click on “create free career profile” and list “ASA/FACT” 
                   under “How did you find out about us?”</p>
  
                   <p>2. Join our partner, Juno (Juno is a financial service that aims to help students lower their student loans) by clicking on <a href ="https://joinjuno.com/p/asianstudentachievement?grow=asiansta">this 
-                  link </a>and send an email of a screenshot of your registration confirmation to ASA@learnasa.org</p>
+                  link </a>and send an email of a screenshot of your registration confirmation to ASA@learnasa.org.</p>
 
                   <p>Also, learn more about our partner, NAAAP (National Association of Asian American Professionals) and click on <a href="https://members.naaap.org/join-naaap">this link </a>and choose 
-                  “ASA/Asian Student Achievement” on "how you heard about us" (Not required for sweepstakes)</p>
+                  “ASA/Asian Student Achievement” on "how you heard about us" (Not required for sweepstakes).</p>
                 </Col>
             </Row>
           </Container>
