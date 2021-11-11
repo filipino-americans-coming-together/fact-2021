@@ -15,10 +15,21 @@ const Schedule = () => (
   <>
     <Section>
       <Section.Title>
-        <div style={{ marginTop: '1em' }}>Conference Agenda</div>
+        <div style={{ marginTop: '1.8em' }}>Conference Agenda</div>
       </Section.Title>
       <Section.Body>
         <Container>
+          <p className={styles.body}>
+            All times CST. View official Whova schedule{' '}
+            <a
+              href="https://whova.com/web/factf_202111/Agenda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+            .
+          </p>
           <Row className={styles.dayContainer}>
             <Col md={4}>
               <div className={`${styles.dayHeader}`}>
@@ -31,12 +42,18 @@ const Schedule = () => (
                 <Event
                   title={'Opening Ceremony'}
                   time={'4:00 - 5:00pm'}
-                  location={'TBD'}
+                  location="YouTube"
+                  links={[{ url: 'https://youtu.be/HZhmOq-eHDM' }]}
                 />
                 <Event
-                  title={'Pamayanan!'}
+                  title={'Networking Session 1'}
                   time={'5:00 - 7:00pm'}
-                  location={'TBD'}
+                  location="Zoom"
+                  links={[
+                    {
+                      url: 'https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -51,23 +68,35 @@ const Schedule = () => (
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Round 1 Workshop'}
+                  title={'Social Justice Workshops'}
                   time={'01:00 - 02:00pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_01' }]}
                 />
                 <Event
-                  title={'Round 2 Workshop'}
+                  title={'Cultural Expression Workshops'}
                   time={'02:30 - 03:30pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_02' }]}
                 />
               </EventList>
             </Col>
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Game Day'}
+                  title={'Meet the Delegates'}
                   time={'04:00 - 6:00pm'}
-                  location={'TBD'}
+                  location="Discord"
+                  links={[
+                    {
+                      url: 'https://discord.gg/ZSHanZn87w',
+                      text: 'Discord Link',
+                    },
+                    {
+                      url: 'https://www.facebook.com/events/959543471292547/permalink/987707215142839/',
+                      text: 'Discord How-To Video',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -82,14 +111,20 @@ const Schedule = () => (
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Round 3 Workshop'}
+                  title={'Career Panels'}
                   time={'1:00 - 3:00pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_03' }]}
                 />
                 <Event
-                  title={'Pamayanan! Part 2'}
+                  title={'Networking Session 2'}
                   time={'3:00 - 5:00pm'}
-                  location={'TBD'}
+                  location="Zoom"
+                  links={[
+                    {
+                      url: 'https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -98,7 +133,8 @@ const Schedule = () => (
                 <Event
                   title={'Variety Show'}
                   time={'5:00 - 7:00pm'}
-                  location={'TBD'}
+                  location="YouTube"
+                  links={[{ url: 'https://youtu.be/E83OWfUrccg' }]}
                 />
               </EventList>
             </Col>

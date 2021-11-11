@@ -56,12 +56,6 @@ const WorkshopFacilitator = styled.h5`
   font-weight: 700;
 `;
 
-const WorkshopLocation = styled.h6`
-  font-family: 'Open Sans';
-  font-size: 1.2em;
-  font-weight: 600;
-`;
-
 const WorkshopDescription = styled.p`
   font-family: 'Open Sans';
 `;

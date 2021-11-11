@@ -18,6 +18,7 @@ import Footer from '../../components/Footer';
 import { FormControl } from 'react-bootstrap';
 
 import styles from './styles.module.css';
+import { useHistory, useLocation } from 'react-router';
 
 const ALL_WORKSHOPS = 'ALL_WORKSHOPS';
 
@@ -42,12 +43,24 @@ const getWorkshops = (filters) => {
   });
 };
 
+function useQuery() {
+  const { search } = useLocation();
+
+  return React.useMemo(() => new URLSearchParams(search), [search]);
+}
+
 const Workshops = () => {
+  const query = useQuery();
+  const sessionQuery = query.get('session');
+  const history = useHistory();
   const [focusedWorkshop, setFocusedWorkshop] = useState('');
-  const [searchFilter, setSearchFilter] = useState(ALL_WORKSHOPS);
+  const [searchFilter, setSearchFilter] = useState(
+    sessionQuery ? sessionQuery : ALL_WORKSHOPS
+  );
   const [searchQuery, setSearchQuery] = useState('');
   const handleSearchDropdownSelect = (eventKey) => {
     setSearchFilter(eventKey);
+    history.push({ pathname: '/workshops', search: `?session=${eventKey}` });
   };
 
   const renderSearchInput = () => {
