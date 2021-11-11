@@ -19,6 +19,17 @@ const Schedule = () => (
       </Section.Title>
       <Section.Body>
         <Container>
+          <p className={styles.body}>
+            All times CST. View official Whova schedule{' '}
+            <a
+              href="https://whova.com/web/factf_202111/Agenda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </a>
+            .
+          </p>
           <Row className={styles.dayContainer}>
             <Col md={4}>
               <div className={`${styles.dayHeader}`}>
@@ -35,7 +46,7 @@ const Schedule = () => (
                   link="https://youtu.be/HZhmOq-eHDM"
                 />
                 <Event
-                  title={'Networking Session #1'}
+                  title={'Networking Session 1'}
                   time={'5:00 - 7:00pm'}
                   location="Zoom"
                   link="https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09"
@@ -53,14 +64,16 @@ const Schedule = () => (
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Round 1 Workshop'}
+                  title={'Social Justice Workshops'}
                   time={'01:00 - 02:00pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  link="/workshops?session=WORKSHOP_SESSION_01"
                 />
                 <Event
-                  title={'Round 2 Workshop'}
+                  title={'Cultural Expression Workshops'}
                   time={'02:30 - 03:30pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  link="/workshops?session=WORKSHOP_SESSION_02"
                 />
               </EventList>
             </Col>
@@ -85,12 +98,13 @@ const Schedule = () => (
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Round 3 Workshop'}
+                  title={'Career Panels'}
                   time={'1:00 - 3:00pm'}
-                  location={'TBD'}
+                  location={'View Workshops'}
+                  link="/workshops?session=WORKSHOP_SESSION_03"
                 />
                 <Event
-                  title={'Networking Session #2'}
+                  title={'Networking Session 2'}
                   time={'3:00 - 5:00pm'}
                   location="Zoom"
                   link="https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09"
