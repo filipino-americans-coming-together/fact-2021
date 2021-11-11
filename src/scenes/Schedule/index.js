@@ -43,13 +43,17 @@ const Schedule = () => (
                   title={'Opening Ceremony'}
                   time={'4:00 - 5:00pm'}
                   location="YouTube"
-                  link="https://youtu.be/HZhmOq-eHDM"
+                  links={[{ url: 'https://youtu.be/HZhmOq-eHDM' }]}
                 />
                 <Event
                   title={'Networking Session 1'}
                   time={'5:00 - 7:00pm'}
                   location="Zoom"
-                  link="https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09"
+                  links={[
+                    {
+                      url: 'https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -67,13 +71,13 @@ const Schedule = () => (
                   title={'Social Justice Workshops'}
                   time={'01:00 - 02:00pm'}
                   location={'View Workshops'}
-                  link="/workshops?session=WORKSHOP_SESSION_01"
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_01' }]}
                 />
                 <Event
                   title={'Cultural Expression Workshops'}
                   time={'02:30 - 03:30pm'}
                   location={'View Workshops'}
-                  link="/workshops?session=WORKSHOP_SESSION_02"
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_02' }]}
                 />
               </EventList>
             </Col>
@@ -83,7 +87,16 @@ const Schedule = () => (
                   title={'Meet the Delegates'}
                   time={'04:00 - 6:00pm'}
                   location="Discord"
-                  link="https://discord.gg/ZSHanZn87w"
+                  links={[
+                    {
+                      url: 'https://discord.gg/ZSHanZn87w',
+                      text: 'Discord Link',
+                    },
+                    {
+                      url: 'https://www.facebook.com/events/959543471292547/permalink/987707215142839/',
+                      text: 'Discord How-To Video',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -101,13 +114,17 @@ const Schedule = () => (
                   title={'Career Panels'}
                   time={'1:00 - 3:00pm'}
                   location={'View Workshops'}
-                  link="/workshops?session=WORKSHOP_SESSION_03"
+                  links={[{ url: '/workshops?session=WORKSHOP_SESSION_03' }]}
                 />
                 <Event
                   title={'Networking Session 2'}
                   time={'3:00 - 5:00pm'}
                   location="Zoom"
-                  link="https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09"
+                  links={[
+                    {
+                      url: 'https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09',
+                    },
+                  ]}
                 />
               </EventList>
             </Col>
@@ -117,7 +134,7 @@ const Schedule = () => (
                   title={'Variety Show'}
                   time={'5:00 - 7:00pm'}
                   location="YouTube"
-                  link="https://youtu.be/E83OWfUrccg"
+                  links={[{ url: 'https://youtu.be/E83OWfUrccg' }]}
                 />
               </EventList>
             </Col>
