@@ -120,7 +120,7 @@ const TeamPage = () => (
             year="Junior"
             major="Sustainable Design with a Minor in Psychology and Integrative Biology"
             bio="Emily is a Junior at UIUC, studying Sustainable Design and pursuing minors in Psychology and Integrative Biology. She hopes to learn more ways to make our landscapes more sustainable for people/animals biologically, economically, and socially. In her free time, she loves to draw, play video games, and hang out with friends. She is excited and cannot wait for FACT this year because she  knows for a FACT that it'll be great :)"
-            imageURL="/img/team/EmilyBautista.jpg"
+            imageURL="/img/team/EmilyBautista.jfif"
           />
           <TeamMember
             name="Nicolas Langtiw"
