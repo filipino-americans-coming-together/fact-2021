@@ -15,7 +15,7 @@ const Schedule = () => (
   <>
     <Section>
       <Section.Title>
-        <div style={{ marginTop: '1em' }}>Conference Agenda</div>
+        <div style={{ marginTop: '1.8em' }}>Conference Agenda</div>
       </Section.Title>
       <Section.Body>
         <Container>
