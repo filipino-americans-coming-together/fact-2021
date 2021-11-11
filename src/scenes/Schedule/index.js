@@ -31,12 +31,14 @@ const Schedule = () => (
                 <Event
                   title={'Opening Ceremony'}
                   time={'4:00 - 5:00pm'}
-                  location={'TBD'}
+                  location="YouTube"
+                  link="https://youtu.be/HZhmOq-eHDM"
                 />
                 <Event
-                  title={'Pamayanan!'}
+                  title={'Networking Session #1'}
                   time={'5:00 - 7:00pm'}
-                  location={'TBD'}
+                  location="Zoom"
+                  link="https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09"
                 />
               </EventList>
             </Col>
@@ -65,9 +67,10 @@ const Schedule = () => (
             <Col md={4}>
               <EventList>
                 <Event
-                  title={'Game Day'}
+                  title={'Meet the Delegates'}
                   time={'04:00 - 6:00pm'}
-                  location={'TBD'}
+                  location="Discord"
+                  link="https://discord.gg/ZSHanZn87w"
                 />
               </EventList>
             </Col>
@@ -87,9 +90,10 @@ const Schedule = () => (
                   location={'TBD'}
                 />
                 <Event
-                  title={'Pamayanan! Part 2'}
+                  title={'Networking Session #2'}
                   time={'3:00 - 5:00pm'}
-                  location={'TBD'}
+                  location="Zoom"
+                  link="https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09"
                 />
               </EventList>
             </Col>
@@ -98,7 +102,8 @@ const Schedule = () => (
                 <Event
                   title={'Variety Show'}
                   time={'5:00 - 7:00pm'}
-                  location={'TBD'}
+                  location="YouTube"
+                  link="https://youtu.be/E83OWfUrccg"
                 />
               </EventList>
             </Col>
