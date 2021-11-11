@@ -2,6 +2,7 @@ import React from 'react';
 
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 import Footer from '../../components/Footer';
 import Layout from '../../components/Utils/Layout';
@@ -14,15 +15,15 @@ const TeamPage = () => (
       <Section.Title>Team</Section.Title>
       <Section.Body>
         <Container>
-          <Col xs={12} md={{ span: 10, offset: 1 }} className="mb-5">
-            {/*             <Image 
+          <Col xs={12} md={{ span: 8, offset: 2 }} className="mb-5">
+            {<Image 
               data-aos="fade-in"
               data-aos-duration="500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
               style={{ borderRadius: '1em'}} 
-              src={`${process.env.PUBLIC_URL}/img/team/team.jpeg`} 
-              fluid /> */}
+              src={`/img/team/team.jfif`} 
+              fluid />}
           </Col>
           <hr className="py-3" style={{ width: '50%' }} />
           <TeamMember
@@ -55,7 +56,7 @@ const TeamPage = () => (
             year="Junior"
             major="Interdisciplinary Health Sciences"
             bio="Mark is a Junior majoring in Interdisciplinary Health Sciences with aspirations to attain a career in the health field. As former Athletic Chair and current VPE, he is enthusiastic and detailed when it comes to event planning, whether it’s within the PSA community, alongside the APAC student organizations, the FAAECI community, or among the intercollegiate Fil-Am student orgs. Two disciplines that he loves to emphasize are (1) to be real & the best version of yourself, and that (2) whether we choose to rise from our struggles or meddle in our misery, the same time will pass- time will not wait. For leisure, he loves lifting, recreational volleyball and soccer, and improv guitar to R&B."
-            imageURL="/img/team/MarkWilliamCasco.jpg"
+            imageURL="/img/team/MarkWilliamCasco.jfif"
           />
           <TeamMember
             name="Abby Masucol"
