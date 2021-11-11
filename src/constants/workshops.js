@@ -1,6 +1,6 @@
 const WORKSHOPS = [{
   id: 'WS1-01',
-  location: 'TBD',
+  location: 'https://illinois.zoom.us/j/81692418882?pwd=aDEyUWlZKy8vdm1WYlgxbXk4eWNEUT09',
   session: 'WORKSHOP_SESSION_01',
   title: 'Planting Seeds for Change, Knowing Our Roots, and Growing Our Communities',
   description: '<p>How can we create change in our community? How can we make our communities more inclusive? How are the issues our communities experience here related to the current struggle in the homeland? Join us to explore our role in creating change with our community and learn about our collective history of resistance in the Philippines.</p>',
