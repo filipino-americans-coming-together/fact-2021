@@ -49,21 +49,6 @@ function useQuery() {
   return React.useMemo(() => new URLSearchParams(search), [search]);
 }
 
-function getDefaultFilter(session) {
-  switch (session) {
-    case '1':
-      return EVENTS.WORKSHOP_SESSION_01;
-    case '2':
-      return EVENTS.WORKSHOP_SESSION_02;
-    case '3':
-      return EVENTS.WORKSHOP_SESSION_03;
-    case 'networking':
-      return EVENTS.NETWORKING_SESSIONS;
-    default:
-      return ALL_WORKSHOPS;
-  }
-}
-
 const Workshops = () => {
   const query = useQuery();
   const sessionQuery = query.get('session');
