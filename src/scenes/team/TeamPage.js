@@ -32,7 +32,7 @@ const TeamPage = () => (
             year="Senior"
             major="Materials Science and Engineering with a Minor in Chemistry"
             bio="Lorenzo Magnaye, or Renzo, is currently a Senior studying Materials Science and Engineering with a minor in Chemistry. He has previously served as Team FACT Manager and Co-Awareness chair during his time in PSA UIUC. In the field of Materials Science, he is specifically interested in polymers and soft materials and he conducts research on this field as part of the Hutchens Dynamic Soft Materials Mechanics Lab at UIUC. He is part of the Illinois Engineering Ambassadors, a professional outreach program sponsored by the university to inspire kids who are underrepresented in engineering fields to pursue engineering degrees. He also works as a Student Assistant for the Engineering Library and for the Materials Science and Engineering Department. During his free time, he loves lifting, recreating his favorite food at home, playing basketball, and following sports. Renzo is excited to coordinate this year's FACT Conference and inspire community building within the Filipino-American community and other minority communities with FACT Pack and his co-chair Myka."
-            imageURL="/img/team/LorenzoMagnaye.jpg"
+            imageURL="/img/team/LorenzoMagnaye.jfif"
           />
           <TeamMember
             name="Myka Padilla"
@@ -88,7 +88,7 @@ const TeamPage = () => (
             year="Junior"
             major="Economics and Philosophy"
             bio="Francis Fabian is a rising Junior in Economics and Philosophy and one day hopes to be a lawyer. He feels a little bad about not being active in PSA over the pandemic and is excited to be working with FACT! Outside of PSA he enjoys watching anime and sitcoms, listening to K-pop girl groups, playing League of Legends, and running Dungeons and Dragons."
-            imageURL="/img/team/FrancisFabian.jpg"
+            imageURL="/img/team/FrancisFabian.jfif"
           />
           <TeamMember
             name="Melencio Sanidad"
@@ -96,7 +96,7 @@ const TeamPage = () => (
             year="Senior"
             major="Integrative Biology"
             bio="Melencio has been involved with PSA since Freshman year and was also a part of last year's FACT Pack as a Campus Ambassador. Other than being involved with PSA, he is also a member of Illini World Taekwondo. He is currently focusing on Entomology but is interested in a career with Wildlife Ecology as well. He is looking forward to helping host another great online FACT and hopes you're just as excited as him!"
-            imageURL="/img/team/MelencioSanidad.jpg"
+            imageURL="/img/team/MelencioSanidad.jfif"
           />
           <TeamMember
             name="Brion Nono"
@@ -128,7 +128,7 @@ const TeamPage = () => (
             year="Junior"
             major="Kinesiology"
             bio="Nicolas Langtiw is currently a Junior at the University of Illinois Urbana-Champaign. He enjoys numerous activities such as playing volleyball/basketball, video games, taking photos or editing videos, and hanging out with his friends. He is excited to be able to be on FACT Pack and be a co-chair on the media portion side with Gio. He has high hopes for FACT this year and hopes to see you all there."
-            imageURL="/img/team/NicolasLangtiw.jpg"
+            imageURL="/img/team/NicolasLangtiw.jfif"
           />
           <TeamMember
             name='GioMarco Talavera'
