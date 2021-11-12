@@ -25,6 +25,8 @@ const Footer = () => (
       <a href="mailto:fact@psauiuc.org?subject=Mail from Our Site">
         fact@psauiuc.org
       </a>
+      <br />
+      Funded by the Student Cultural Programming Fee.
     </p>
   </StyledFooter>
 );
