@@ -34,6 +34,14 @@ const Navigation = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
       <Nav className="ml-auto">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DAElUcxDnWo/B1WDETKd95J16zlrI8s32g/view?utm_content=DAElUcxDnWo&utm_campaign=designshare&utm_medium=link&utm_source=viewer">
+          <Button
+            variant="fact"
+            className={`nav-link fontOpenSans ${styles.link}`}
+          >
+            Booklet
+          </Button>
+        </a>
         <li className="nav-item">
           <Link
             className={`nav-link fontOpenSans ${styles.link}`}
