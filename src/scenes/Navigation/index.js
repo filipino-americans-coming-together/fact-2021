@@ -34,7 +34,7 @@ const Navigation = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
       <Nav className="ml-auto">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DAElUcxDnWo/B1WDETKd95J16zlrI8s32g/view?utm_content=DAElUcxDnWo&utm_campaign=designshare&utm_medium=link&utm_source=viewer">
+        <a target="_blank" rel="noopener noreferrer" href={process.env.PUBLIC_URL + '/files/29th Annual FACT Virtual Conference 2021.pdf'}>
           <Button
             variant="fact"
             className={`nav-link fontOpenSans ${styles.link}`}
