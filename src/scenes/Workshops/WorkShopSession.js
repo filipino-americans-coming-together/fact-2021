@@ -121,8 +121,8 @@ const WorkshopSession = ({ workshop }) => {
           </WorkshopFacilitator>
           {location !== 'TBD' && (
             <a target="_blank" rel="noopener noreferrer" href={location}>
-              <Button variant="secondary" className="mb-3 fontOpenSans">
-                Zoom Link
+              <Button variant="secondary" className="mb-3 fontOpenSans" disabled>
+                Zoom Link Closed
               </Button>
             </a>
           )}
