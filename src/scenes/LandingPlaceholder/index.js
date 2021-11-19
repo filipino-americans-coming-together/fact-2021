@@ -16,7 +16,7 @@ import About from '../About';
 import FacilitatorsSection from '../FacilitatorsSection';
 import Actions from '../Actions';
 
-import { REGISTRATION_URL } from '../../constants/links';
+import { OPENING_CEREMONY_URL, VSHOW_URL } from '../../constants/links';
 
 import YouTube from 'react-youtube';
 
@@ -32,41 +32,63 @@ const Landing = () => (
           <Container>
             <UICard>
               <UICard.Header>
-                <UICard.Title>Register for FACT 2021</UICard.Title>
-                <UICard.Subtitle>Open until Nov. 12</UICard.Subtitle>
+                <UICard.Title>Thank you!</UICard.Title>
+                <UICard.Subtitle>
+                  On behalf of FACT Pack and the Philippine Student Association,
+                </UICard.Subtitle>
               </UICard.Header>
               <UICard.Body>
                 <Row>
-                  <Col lg={{ span: 6, offset: 3 }}>
+                  <Col>
                     <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
-                      The registration for FACT 2021 IS{' '}
-                      <span role="img" aria-label="sparkle">
-                        ✨
-                      </span>
-                      NOW OPEN!✨ The long wait is finally over! Join us for the
-                      largest student-led Filipino-American Conference in the
-                      Midwest!
+                      We cannot express how grateful we are to you all for
+                      attending the Filipino Americans Coming Together
+                      Conference this year. The past years have impacted our
+                      lives immensely and the FACT Conference has adapted in
+                      unexpected ways. In spite of this, you all have come
+                      together with the same passion to learn and grow with us.
+                      This conference would not have come together without your
+                      support and dedication to the awareness of Filipino and
+                      Filipino-American culture. We hope the knowledge and
+                      connections you acquired this weekend will carry with you
+                      beyond FACT 2021 Lakas ng Pagsasama: Strength in
+                      Community. Thank you for helping our vision come to life.
+                    </p>
+                    <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
+                      We hope to see you all at MFAS and FACT 2022!
+                    </p>
+                    <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
+                      - Myka Padilla and Lorenzo Magnaye
                     </p>
                   </Col>
                 </Row>
                 <Row
                   style={{
                     display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
                   }}
                 >
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={REGISTRATION_URL}
+                    href={OPENING_CEREMONY_URL}
                   >
                     <Button
                       variant="fact"
                       size="lg"
-                      className="gold-metallic-button animated fadeIn"
+                      className="gold-metallic-button animated fadeIn mr-3 mt-2"
                     >
-                      Register Now
+                      Opening Ceremony
+                    </Button>
+                  </a>
+                  <a target="_blank" rel="noopener noreferrer" href={VSHOW_URL}>
+                    <Button
+                      variant="fact"
+                      size="lg"
+                      className="gold-metallic-button animated fadeIn mt-2"
+                    >
+                      Variety Show
                     </Button>
                   </a>
                 </Row>
@@ -78,9 +100,13 @@ const Landing = () => (
       <FacilitatorsSection />
       <Actions />
       <Section>
-        <Section.Title style={{
-          fontSize: '2rem',
-        }}>ASA Sweepstakes</Section.Title>
+        <Section.Title
+          style={{
+            fontSize: '2rem',
+          }}
+        >
+          ASA Sweepstakes
+        </Section.Title>
         <Section.Body>
           <Container>
             <Row>
