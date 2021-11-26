@@ -9,8 +9,6 @@ import ImageHeader from '../../components/Utils/ImageHeader'
 
 import YouTube from 'react-youtube'
 
-import Schedule from './components/Schedule'
-
 import styles from './styles.module.css'
 
 const Home = () => (
@@ -36,7 +34,6 @@ const Home = () => (
           </Container>
         </Section.Body>
       </Section>
-      <Schedule/>
       <Section>
         <Section.Title>FACT 2018</Section.Title>
         <Section.Body>

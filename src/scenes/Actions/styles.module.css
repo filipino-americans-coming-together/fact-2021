@@ -1,0 +1,48 @@
+.root {
+  width: 100%;
+  background-color: var(--russian-green);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--gold-metallic);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.actions {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .actions {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .action {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.eagle {
+  height: 18rem;
+}

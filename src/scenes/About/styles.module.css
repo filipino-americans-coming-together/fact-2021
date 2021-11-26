@@ -1,0 +1,123 @@
+.container {
+  padding-top: 100px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.title {
+  color: var(--gold-metallic);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bolder;
+  font-size: 62px;
+  line-height: 70px;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 3rem;
+  }
+}
+
+.subtheme {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 992px) {
+  .subtheme {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.headings {
+  padding-top: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.logo {
+  margin-left: 12rem;
+  width: 60%;
+}
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+}
+
+.mobile_logo {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile_logo {
+    width: 20%;
+    display: block;
+  }
+}
+
+.description {
+  margin-top: 2rem;
+  padding-right: 6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 992px) {
+  .description {
+    font-size: 18px;
+    padding-right: 0rem;
+  }
+}
+
+/* https://blog.hubspot.com/website/css-fade-in */
+.fade_in_image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

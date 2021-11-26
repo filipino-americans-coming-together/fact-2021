@@ -1,12 +1,17 @@
 .container {
   padding-bottom: 2em;
 }
-.title, .facilitator, .description, .location {
+
+.title,
+.facilitator,
+.description,
+.location {
   font-family: 'Noto Sans';
 }
+
 .title {
   font-weight: 700;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .facilitator {
@@ -22,7 +27,26 @@
   font-weight: 700;
 }
 
-
 .category {
-  padding: .25em;
+  padding: 0.25em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-left: 25%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputs {
+    margin-left: 1rem;
+  }
+}
+
+.inputRow {
+  margin-bottom: 4px;
 }

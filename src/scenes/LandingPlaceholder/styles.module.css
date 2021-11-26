@@ -1,18 +1,25 @@
 .title {
-    color: white;
-  }
+  color: white;
+}
 .date {
-    color: white;
+  color: white;
 }
 .subtitle {
-    color: white;
+  color: white;
 }
 
-@media(max-width: 576px) {
-    .title {
-        font-size: 1.5rem;
-    }
-    .date, .subtitle {
-        font-soze: 1.2rem;
-    }
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .date,
+  .subtitle {
+    font-soze: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .video {
+    max-width: 280px;
+  }
 }

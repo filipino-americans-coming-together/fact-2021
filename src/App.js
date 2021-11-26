@@ -3,26 +3,32 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navigation from './scenes/Navigation'
 import Landing from './scenes/LandingPlaceholder'
+import Schedule from './scenes/Schedule'
 import TeamPage from './scenes/team/TeamPage'
 import Workshops from './scenes/Workshops'
+import Speakers from './scenes/Speakers';
 import AppDownload from './scenes/AppDownload'
-import AdminDashboard from './scenes/AdminDashboard'
+// import AdminDashboard from './scenes/AdminDashboard'
 import BookletPDFViewer from './scenes/BookletPDFViewer'
 
 import './stylesheets/global.css'
 import './stylesheets/colors.css'
 import './stylesheets/fonts.css'
+import ScrollToTop from './components/Utils/ScrollToTop'
 
 const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navigation />
         <Route exact path='/' component={Landing} />
+        <Route path='/schedule' component={Schedule} />
         <Route path='/team' component={TeamPage} />
         <Route path='/workshops' component={Workshops} />
+        <Route path='/speakers' component={Speakers} />
         <Route path='/app' component={AppDownload} />
-        <Route path='/admin-dashboard' component={AdminDashboard} />
+        {/* <Route path='/admin-dashboard' component={AdminDashboard} /> */}
         <Route path='/booklet' component={BookletPDFViewer} />
         <script
           src='https://code.jquery.com/jquery-3.3.1.slim.min.js'

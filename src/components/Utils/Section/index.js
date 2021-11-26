@@ -18,7 +18,7 @@ Section.Title = ({ children, className, ...rest }) => (
     <Col md={12}>
       <h1 className={
         classNames(
-          'text-center letterSpacing animted fadeIn',
+          'text-center letterSpacing animated fadeIn',
           className,
           styles.header
         )} {...rest}>{ children }</h1>

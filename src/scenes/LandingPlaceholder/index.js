@@ -1,226 +1,165 @@
-import React from 'react'
+import React from 'react';
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
-import UICard from '../../UIComponents/UICard'
-import UIYoutubeEmbed from '../../UIComponents/UIYoutubeEmbed'
+import UICard from '../../UIComponents/UICard';
 
-import Layout from '../../components/Utils/Layout'
-import Section from '../../components/Utils/Section'
-import ImageHeader from '../../components/Utils/ImageHeader'
-import Footer from '../../components/Footer'
+import Layout from '../../components/Utils/Layout';
+import Section from '../../components/Utils/Section';
+import Footer from '../../components/Footer';
 
-import styles from './styles.module.css'
+import Hero from '../../components/Utils/Hero';
+import About from '../About';
+import FacilitatorsSection from '../FacilitatorsSection';
+import Actions from '../Actions';
 
-const Event = ({ time, title, location, duration }) => (
- <div className='boxShadow' style={{
-    background: `linear-gradient(215deg, rgba(241,164,232,1) 0%, rgba(200,178,223,1) 66%)`,
-    borderRadius: '.5em',
-    marginBottom: '.75em',
-    marginTop: '.75em',
-    padding: '.75em',
-    paddingTop: '.5em',
-    minHeight: `${3.4 * duration}em`,
-    display: 'flex'
- }}>
-    <div style={{
-      flex: 2
-    }}>
-      <p 
-        className='fontOpenSans p-0 m-0 text-white'
-        style={{
-          fontWeight: 900,
-          fontSize: '.9em',
-          textAlign: 'right'
-        }}
-      >{time}</p>
-    </div>
-    <div style={{
-      flex: 3,
-      paddingLeft: '1em'
-    }}>
-      <p
-        className='fontOpenSans p-0 m-0 text-white'
-        style={{
-          fontWeight: 600,
-          fontSize: '1em'
-        }}
-      >{title}</p>
-      <p
-        className='fontOpenSans p-0 m-0 text-white'
-        style={{
-          fontWeight: 300,
-          fontSize: '1em'
-        }}
-      >{location}</p>
-    </div>
- </div>
-)
+import { OPENING_CEREMONY_URL, VSHOW_URL } from '../../constants/links';
 
-const Day = ({ day, events }) => (
-  <div style={{ marginBottom: '2em' }}>
-  <h3 
-    style={{
-      fontWeight: 200,
-      paddingBottom: '.5em'
-    }}
-    className='text-center fontOpenSans'
-  >{day}</h3>
-  {(events || []).map(event => (
-    <Event {...event}/>
-  ))}
-  </div>
+import YouTube from 'react-youtube';
 
-)
-const Agenda = () => (
-  <Row>
-    <Col md={{ span: 8, offset: 2 }} lg={{ span: 5, offset: 1}}>
-    <Day day="Friday" events={[
-      {
-        time: "4:00 - 10:00pm",
-        duration: 1,
-        title: "Registration",
-        location: "Asian American Cultural Center",
-      },
-      {
-        time: "7:00 - 9:00pm",
-        duration: 2,
-        title: "Opening Ceremonies",
-        location: "Gregory Hall Auditorium",
-      }
-    ]}/>
-    </Col>
-    <Col md={{ span: 8, offset: 2 }} lg={{ span: 5, offset: 0 }}>
-    <Day day="Saturday" events={[
-      {
-        time: "8:30 - 9:30am",
-        duration: 1,
-        title: "Late Registration",
-        location: "University YMCA",
-      },
-      {
-        time: "9:00 - 9:40am",
-        duration: .75,
-        title: "Opening Session",
-        location: "Lincoln Hall Theater",
-      },
-      {
-        time: "9:55 - 11:00am",
-        duration: 1.1,
-        title: "Workshop Session I",
-        location: "Assigned Location"
-      },
-      {
-        time: "11:15am - 12:20pm",
-        duration: 1.1,
-        title: "Workshop Session II",
-        location: "Assigned Location"
-      },
-      {
-        time: "12:20 - 1:30pm",
-        duration: 1.1,
-        title: "Lunch",
-      },
-      {
-        time: "1:45 - 3:00pm",
-        duration: 1.25,
-        title: "Workshop Session III",
-        location: "Assigned Location"
-      },
-      {
-        time: "3:15 - 4:15pm",
-        duration: 1,
-        title: "Meet the Facilitators & Wristband Pick-up",
-        location: "Asian American Cultural Center"
-      },
-      {
-        time: "5:00 - 7:00pm",
-        duration: 2,
-        title: "Variety Show",
-        location: "Foellinger Auditorium"
-      }
-    ]}/>
-    </Col>
-  </Row>
-)
+import styles from './styles.module.css';
+
 const Landing = () => (
   <>
     <Layout>
-      <ImageHeader imageURL='/img/background.jpg'>
-        <h3 className={`animated fadeIn fontMoam ${styles.date}`}>2019</h3>
-        <h2 className={`animated fadeIn fontMoam ${styles.title}`}>Filipino-Americans Coming Together</h2>
-        <h3 className={`animated fadeIn fontMoam ${styles.subtitle}`}>Conference</h3>
-      </ImageHeader>
-      <Section>
-        <Section.Title>About</Section.Title>
-        <Section.Body>
-          <Container>
-            <Row>
-              <Col
-                md={12}
-                lg={{ span: 10, offset: 1}}
-              >
-                <p className='text-black-50'>We unite Filipino-Americans. Filipino-Americans Coming Together (FACT) Conference brings together over 1000 Filipino-Americans from the Midwest and around the country into a weekend filled with lasting experiences at the University of Illinois at Urbana-Champaign (UIUC) campus. Through our workshops and variety show, you will rediscover your Filipino-American identity while feeling belonging in a larger community.</p>
-              </Col>
-            </Row>
-          </Container>
-        </Section.Body>
-      </Section>
-      <Section>
+      <Hero />
+      <About />
+      <Section className="phthalo-green-bkg">
         <Section.Body>
           <Container>
             <UICard>
               <UICard.Header>
-                <UICard.Title>Register for FACT 2019</UICard.Title>
-                <UICard.Subtitle>Nov 8th - Nov 10th</UICard.Subtitle>
+                <UICard.Title>Thank you!</UICard.Title>
+                <UICard.Subtitle>
+                  On behalf of FACT Pack and the Philippine Student Association,
+                </UICard.Subtitle>
               </UICard.Header>
               <UICard.Body>
                 <Row>
-                  <Col lg={{ span: 6, offset: 3 }}>
-                    <p className='text-white p-2' style={{ fontSize: '1.1em'}}>
-                      Registration is now closed. However, we have onsite registration on Nov 9th! Attendees who register onsite will still be able to attend workshops and other conference activities, but will have limited workshop options.
+                  <Col>
+                    <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
+                      We cannot express how grateful we are to you all for
+                      attending the Filipino Americans Coming Together
+                      Conference this year. The past years have impacted our
+                      lives immensely and the FACT Conference has adapted in
+                      unexpected ways. In spite of this, you all have come
+                      together with the same passion to learn and grow with us.
+                      This conference would not have come together without your
+                      support and dedication to the awareness of Filipino and
+                      Filipino-American culture. We hope the knowledge and
+                      connections you acquired this weekend will carry with you
+                      beyond FACT 2021 Lakas ng Pagsasama: Strength in
+                      Community. Thank you for helping our vision come to life.
+                    </p>
+                    <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
+                      We hope to see you all at MFAS and FACT 2022!
+                    </p>
+                    <p className="text-white p-2" style={{ fontSize: '1.1em' }}>
+                      - Myka Padilla and Lorenzo Magnaye
                     </p>
                   </Col>
+                </Row>
+                <Row
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={OPENING_CEREMONY_URL}
+                  >
+                    <Button
+                      variant="fact"
+                      size="lg"
+                      className="gold-metallic-button animated fadeIn mr-3 mt-2"
+                    >
+                      Opening Ceremony
+                    </Button>
+                  </a>
+                  <a target="_blank" rel="noopener noreferrer" href={VSHOW_URL}>
+                    <Button
+                      variant="fact"
+                      size="lg"
+                      className="gold-metallic-button animated fadeIn mt-2"
+                    >
+                      Variety Show
+                    </Button>
+                  </a>
                 </Row>
               </UICard.Body>
             </UICard>
           </Container>
         </Section.Body>
       </Section>
+      <FacilitatorsSection />
+      <Actions />
       <Section>
-        <Section.Title>Conference Agenda</Section.Title>
+        <Section.Title
+          style={{
+            fontSize: '2rem',
+          }}
+        >
+          ASA Sweepstakes
+        </Section.Title>
         <Section.Body>
           <Container>
-              <Col 
-                className='mx-auto'
-                md={12}
-                lg={{ span: 10, offset: 1 }}
+            <Row>
+              <Col
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
               >
-                  <Agenda/>
-                
+                <YouTube videoId={'UhzUZHK_p5k'} className={styles.video} />
               </Col>
+              <Col>
+                <p>
+                  Would you like to be entered to win one of two $25 Target Gift
+                  Card giving? Just do one of these two tasks:
+                </p>
+                <p>
+                  1. Sign-up as a job seeker at Asian Student Achievement by
+                  going to{' '}
+                  <a href="https://www.learnasa.org/">www.learnasa.org</a> (ASA
+                  is a not-for-profit organization that specializes in coaching
+                  that also has a diversity-driven job board) and click on
+                  “create free career profile” and list “ASA/FACT” under “How
+                  did you find out about us?”
+                </p>
+
+                <p>
+                  2. Join our partner, Juno (Juno is a financial service that
+                  aims to help students lower their student loans) by clicking
+                  on{' '}
+                  <a href="https://joinjuno.com/p/asianstudentachievement?grow=asiansta">
+                    this link{' '}
+                  </a>
+                  and send an email of a screenshot of your registration
+                  confirmation to ASA@learnasa.org.
+                </p>
+
+                <p>
+                  Also, learn more about our partner, NAAAP (National
+                  Association of Asian American Professionals) and click on{' '}
+                  <a href="https://members.naaap.org/join-naaap">this link </a>
+                  and choose “ASA/Asian Student Achievement” on "how you heard
+                  about us" (Not required for sweepstakes).
+                </p>
+              </Col>
+            </Row>
           </Container>
         </Section.Body>
       </Section>
-      <Section>
-        <Section.Title>Fact 2018 Recap</Section.Title>
-        <Section.Body>
-          <Container>
-              <Col 
-                className='mx-auto'
-                md={12}
-                lg={{ span: 10, offset: 1 }}
-              >
-                  <UIYoutubeEmbed videoId='k6pGrTnh5uQ'/>
-                
-              </Col>
-          </Container>
-        </Section.Body>
-      </Section>
-      <Footer/>
+      <Footer />
     </Layout>
   </>
-)
-export default Landing
+);
+export default Landing;
