@@ -48,12 +48,13 @@ const Schedule = () => (
                 <Event
                   title={'Networking Session 1'}
                   time={'5:00 - 7:00pm'}
-                  location="Zoom"
-                  links={[
-                    {
-                      url: 'https://illinois.zoom.us/j/88053919159?pwd=cnNlVUZmQ2JyZUc4V3NIOFV6bk0vZz09',
-                    },
-                  ]}
+                  // TODO: replace link with recording
+                  // location="Zoom"
+                  // links={[
+                  //   {
+                  //     url: '',
+                  //   },
+                  // ]}
                 />
               </EventList>
             </Col>
@@ -119,12 +120,13 @@ const Schedule = () => (
                 <Event
                   title={'Networking Session 2'}
                   time={'3:00 - 5:00pm'}
-                  location="Zoom"
-                  links={[
-                    {
-                      url: 'https://illinois.zoom.us/j/88631534202?pwd=VHV4aEUvNmFWSEM1UEI5SWtzVUR5QT09',
-                    },
-                  ]}
+                  // TODO: replace link with recording
+                  // location="Zoom"
+                  // links={[
+                  //   {
+                  //     url: '',
+                  //   },
+                  // ]}
                 />
               </EventList>
             </Col>
